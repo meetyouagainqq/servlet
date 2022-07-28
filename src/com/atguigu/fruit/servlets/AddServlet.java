@@ -20,6 +20,9 @@ public class AddServlet extends HttpServlet {
     //    相应post请求
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // servlet post方式需设置编码防止乱码,设置编码放在获取参数之前
+        //get方式无需设置
+        req.setCharacterEncoding("UTF-8");
         String fname = req.getParameter("fname");
         String price = req.getParameter("price");
         int priceValue = Integer.parseInt(price);
