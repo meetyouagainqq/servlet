@@ -22,4 +22,28 @@
         <servlet-name>DemoServlet</servlet-name>
         <url-pattern>/demo</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Demo1Servlet</servlet-name>
+        <servlet-class>com.atguigu.fruit.servlets.Demo1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo1Servlet</servlet-name>
+        <url-pattern>/demo1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionTestServlet</servlet-name>
+        <servlet-class>com.atguigu.fruit.servlets.session.SessionTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTestServlet</servlet-name>
+        <url-pattern>/demo3</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionTestServlet1</servlet-name>
+        <servlet-class>com.atguigu.fruit.servlets.session.SessionTestServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTestServlet1</servlet-name>
+        <url-pattern>/demo4</url-pattern>
+    </servlet-mapping>
 </web-app>
